@@ -7,7 +7,7 @@ function App() {
     <Route>
        <div className="flex justify-center items-center h-screen bg-green-500">
         <div>
-          
+          <Navbar/>
         </div>
     </div>
     </Route>
