@@ -1,17 +1,20 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-
 
 function App() {
   return (
-    <Route>
-       <div className="flex justify-center items-center h-screen bg-green-500">
+    <Router>
+      <div className="flex justify-center items-center h-screen bg-green-500">
         <div>
-          <Navbar/>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<h1 className="text-white text-3xl">Home Page</h1>} />
+            <Route path="/about" element={<h1 className="text-white text-3xl">About Page</h1>} />
+          </Routes>
         </div>
-    </div>
-    </Route>
-   
+      </div>
+    </Router>
   );
 }
 
