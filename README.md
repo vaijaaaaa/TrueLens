@@ -1,6 +1,6 @@
 # 📸 True Lens
 
-![True Lens Banner]  ![Screenshot 2025-06-08 223352](https://github.com/user-attachments/assets/fa8728b1-2b1e-4bb5-8b84-95e05c0319ac)
+[Screenshot 2025-06-08 223352](https://github.com/user-attachments/assets/fa8728b1-2b1e-4bb5-8b84-95e05c0319ac)
 
 *Capture the world through a sharper perspective!*
 
