@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Shield, CheckCircle, AlertTriangle, Star, Download, Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +28,13 @@ function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  const navItems = ['Home', 'Features', 'How It Works', 'Download Extension', 'Contact'];
+  const navItems = [
+    { name: 'Home', path: '/home' },
+    { name: 'Features', path: '/features' },
+    { name: 'How It Works', path: '/how-it-works' },
+    { name: 'Download Extension', path: '/download' },
+    { name: 'Contact', path: '/contact' }
+  ];
 
   return (
     <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden" style={{ fontFamily: 'Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif' }}>
@@ -69,16 +76,16 @@ function Home() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item, index) => (
-              <a
-                key={item}
-                href="#"
+              <Link
+                key={item.name}
+                to={item.path}
                 className={`text-sm font-medium transition-colors hover:text-green-400 ${
                   index === 0 ? 'text-green-400' : 'text-gray-300'
                 }`}
                 style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
           </div>
 
@@ -96,15 +103,16 @@ function Home() {
           <div className="md:hidden absolute top-full left-0 right-0 bg-gray-900/95 backdrop-blur-md border-b border-gray-800/50">
             <div className="px-6 py-4 space-y-4">
               {navItems.map((item, index) => (
-                <a
-                  key={item}
-                  href="#"
+                <Link
+                  key={item.name}
+                  to={item.path}
                   className={`block text-sm font-medium transition-colors hover:text-green-400 ${
                     index === 0 ? 'text-green-400' : 'text-gray-300'
                   }`}
+                  onClick={() => setIsMenuOpen(false)}
                 >
-                  {item}
-                </a>
+                  {item.name}
+                </Link>
               ))}
             </div>
           </div>
