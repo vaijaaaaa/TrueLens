@@ -21,15 +21,6 @@
 - 🌐 **Cross-Platform Support** (Web, Mobile, Desktop)  
 - 🔒 **Privacy-Focused** – your data stays with you  
 
----
-
-## 📸 Demo
-
-Check out the live demo here: [True Lens Demo](https://your-demo-link.com)  
-Or watch the walkthrough video: 🎥 [YouTube Link](https://youtube.com/your-video)
-
----
-
 ## 🛠️ Installation
 
 ### Requirements
