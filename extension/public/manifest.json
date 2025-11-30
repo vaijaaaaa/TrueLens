@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "TrueLens",
+  "version": "1.0.0",
+  "description": "Detect fake news and political bias on any webpage",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://localhost:5000/*"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "TrueLens - Analyze Page"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

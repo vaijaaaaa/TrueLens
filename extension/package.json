@@ -1,0 +1,23 @@
+{
+  "name": "truelens-extension",
+  "version": "1.0.0",
+  "description": "TrueLens - Fake News & Political Bias Detection Browser Extension",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && npm run copy-scripts",
+    "copy-scripts": "node scripts/copy-content.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
+  }
+}
