@@ -7,8 +7,7 @@ A browser extension that analyzes news articles in real-time to detect misinform
 ---
 
 ## Model Architecture
-
-[Architecture diagram placeholder]
+<img width="1224" height="471" alt="TruLens" src="https://github.com/user-attachments/assets/a25b74ea-a21f-41ee-abe9-e4a5f81aa701" />
 
 ---
 
