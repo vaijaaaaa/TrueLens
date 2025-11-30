@@ -1,14 +1,15 @@
 {
-  "name": "backend",
+  "name": "truelens-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "TrueLens Backend - Proxy server between Extension and ML Service",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
   },
-  "keywords": [],
+  "keywords": ["truelens", "fake-news", "bias-detection"],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "axios": "^1.13.2",
     "cors": "^2.8.5",
